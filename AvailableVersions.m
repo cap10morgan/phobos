@@ -11,6 +11,8 @@
 
 @implementation AvailableVersions
 
+@synthesize versions;
+
 - (void)loadAvailableVersionsWithDelegate:(id)aDelegate {
     [self setDelegate:aDelegate];
     

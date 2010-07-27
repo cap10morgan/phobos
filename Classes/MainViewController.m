@@ -12,9 +12,10 @@
 
 @implementation MainViewController
 
-@synthesize versions;
+@synthesize versions, latestVersion;
 
 - (void)viewDidLoad {
+    latestVersion.font = [UIFont boldSystemFontOfSize:32.0];
     [self loadAvailableVersions];
 	[super viewDidLoad];
 }
@@ -29,9 +30,49 @@
     }
 }
 
+- (NSDictionary *)deviceDetails {
+    UIDevice *thisDevice = [UIDevice currentDevice];
+    NSLog(@"Got the device details");
+	NSDictionary *deviceDict = [NSDictionary dictionaryWithObjectsAndKeys:
+								[thisDevice systemVersion], @"systemVersion",
+								[thisDevice platform], @"platform",
+								nil];
+    return deviceDict;
+}
+
 - (void)receivedAvailableVersions:(NSDictionary *)theVersions {
-    versions = theVersions;
+    self.versions = theVersions;
     NSLog(@"Got new versions");
+    NSDictionary *deviceDetails = [self deviceDetails];
+    NSString *deviceModel = [deviceDetails objectForKey:@"platform"];
+    NSNumber *majorVersion = [NSNumber numberWithInteger:(NSInteger)0];
+    NSNumber *minorVersion = [NSNumber numberWithInteger:(NSInteger)0];
+    NSNumber *patchVersion = [NSNumber numberWithInteger:(NSInteger)0];
+    NSString *productVersion;
+    NSArray *versionComponents;
+    NSEnumerator *versionEnumerator;
+    id key;
+    NSDictionary *modelVersions = [self.versions objectForKey:deviceModel];
+    if (modelVersions != nil) {
+        versionEnumerator = [modelVersions keyEnumerator];
+        while (key = [versionEnumerator nextObject]) {
+            if ([[modelVersions objectForKey:key] objectForKey:@"Restore"]) {
+                productVersion = [[[modelVersions objectForKey:key] objectForKey:@"Restore"] objectForKey:@"ProductVersion"];
+                versionComponents = [productVersion componentsSeparatedByString:@"."];
+                if ([[versionComponents objectAtIndex:0] intValue] >=[majorVersion intValue]) {
+                    majorVersion = [NSNumber numberWithInteger:[[versionComponents objectAtIndex:0] integerValue]];
+                    if ([[versionComponents objectAtIndex:1] intValue] >= [minorVersion intValue]) {
+                        minorVersion = [NSNumber numberWithInteger:[[versionComponents objectAtIndex:1] integerValue]];
+                        if ([[versionComponents objectAtIndex:2] intValue] >= [patchVersion intValue]) {
+                            patchVersion = [NSNumber numberWithInteger:[[versionComponents objectAtIndex:2] integerValue]];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    latestVersion.text = [NSString stringWithFormat:@"%@.%@.%@", majorVersion, minorVersion, patchVersion];
 }
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {

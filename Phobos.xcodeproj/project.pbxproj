@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1547131F11FF582200288E69 /* UIDevice-hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547131E11FF582200288E69 /* UIDevice-hardware.m */; };
 		15EB429D11FDCA9800EAB2C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB429C11FDCA9800EAB2C8 /* UIKit.framework */; };
 		15EB429F11FDCA9800EAB2C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB429E11FDCA9800EAB2C8 /* Foundation.framework */; };
 		15EB42A111FDCA9800EAB2C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB42A011FDCA9800EAB2C8 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1547131D11FF582200288E69 /* UIDevice-hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-hardware.h"; sourceTree = "<group>"; };
+		1547131E11FF582200288E69 /* UIDevice-hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-hardware.m"; sourceTree = "<group>"; };
 		15EB429911FDCA9800EAB2C8 /* Phobos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EB429C11FDCA9800EAB2C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15EB429E11FDCA9800EAB2C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,8 @@
 				15EB42B011FDCA9800EAB2C8 /* MainViewController.m */,
 				15EB42B411FDCA9900EAB2C8 /* FlipsideViewController.h */,
 				15EB42B511FDCA9900EAB2C8 /* FlipsideViewController.m */,
+				1547131D11FF582200288E69 /* UIDevice-hardware.h */,
+				1547131E11FF582200288E69 /* UIDevice-hardware.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -152,7 +157,6 @@
 			};
 			buildConfigurationList = 15EB428F11FDCA9800EAB2C8 /* Build configuration list for PBXProject "Phobos" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -191,6 +195,7 @@
 				15EB42B111FDCA9800EAB2C8 /* MainViewController.m in Sources */,
 				15EB42B611FDCA9900EAB2C8 /* FlipsideViewController.m in Sources */,
 				15EB42C411FDCD6B00EAB2C8 /* AvailableVersions.m in Sources */,
+				1547131F11FF582200288E69 /* UIDevice-hardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +231,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
 			};
@@ -240,7 +244,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;

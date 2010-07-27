@@ -11,11 +11,11 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
     NSDictionary *versions;
-    UITableView *versionsTableView;
+    IBOutlet UILabel *latestVersion;
 }
 
 @property (nonatomic, retain) NSDictionary *versions;
-@property (nonatomic, retain) IBOutlet UITableView *versionsTableView;
+@property (nonatomic, retain) IBOutlet UILabel *latestVersion;
 
 - (IBAction)showInfo:(id)sender;
 
