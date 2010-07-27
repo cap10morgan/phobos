@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15EB429D11FDCA9800EAB2C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB429C11FDCA9800EAB2C8 /* UIKit.framework */; };
+		15EB429F11FDCA9800EAB2C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB429E11FDCA9800EAB2C8 /* Foundation.framework */; };
+		15EB42A111FDCA9800EAB2C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EB42A011FDCA9800EAB2C8 /* CoreGraphics.framework */; };
+		15EB42A611FDCA9800EAB2C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15EB42A411FDCA9800EAB2C8 /* InfoPlist.strings */; };
+		15EB42A811FDCA9800EAB2C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB42A711FDCA9800EAB2C8 /* main.m */; };
+		15EB42AB11FDCA9800EAB2C8 /* PhobosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB42AA11FDCA9800EAB2C8 /* PhobosAppDelegate.m */; };
+		15EB42AE11FDCA9800EAB2C8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EB42AC11FDCA9800EAB2C8 /* MainWindow.xib */; };
+		15EB42B111FDCA9800EAB2C8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB42B011FDCA9800EAB2C8 /* MainViewController.m */; };
+		15EB42B311FDCA9900EAB2C8 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EB42B211FDCA9900EAB2C8 /* MainView.xib */; };
+		15EB42B611FDCA9900EAB2C8 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB42B511FDCA9900EAB2C8 /* FlipsideViewController.m */; };
+		15EB42B811FDCA9900EAB2C8 /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EB42B711FDCA9900EAB2C8 /* FlipsideView.xib */; };
+		15EB42C411FDCD6B00EAB2C8 /* AvailableVersions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EB42C311FDCD6B00EAB2C8 /* AvailableVersions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15EB429911FDCA9800EAB2C8 /* Phobos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EB429C11FDCA9800EAB2C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15EB429E11FDCA9800EAB2C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15EB42A011FDCA9800EAB2C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15EB42A211FDCA9800EAB2C8 /* Phobos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Phobos-Info.plist"; sourceTree = "<group>"; };
+		15EB42A311FDCA9800EAB2C8 /* Phobos_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Phobos_Prefix.pch; sourceTree = "<group>"; };
+		15EB42A511FDCA9800EAB2C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15EB42A711FDCA9800EAB2C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15EB42A911FDCA9800EAB2C8 /* PhobosAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhobosAppDelegate.h; sourceTree = "<group>"; };
+		15EB42AA11FDCA9800EAB2C8 /* PhobosAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhobosAppDelegate.m; sourceTree = "<group>"; };
+		15EB42AD11FDCA9800EAB2C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		15EB42AF11FDCA9800EAB2C8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		15EB42B011FDCA9800EAB2C8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		15EB42B211FDCA9900EAB2C8 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		15EB42B411FDCA9900EAB2C8 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		15EB42B511FDCA9900EAB2C8 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		15EB42B711FDCA9900EAB2C8 /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
+		15EB42C211FDCD6B00EAB2C8 /* AvailableVersions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvailableVersions.h; path = ../AvailableVersions.h; sourceTree = "<group>"; };
+		15EB42C311FDCD6B00EAB2C8 /* AvailableVersions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvailableVersions.m; path = ../AvailableVersions.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15EB429611FDCA9800EAB2C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EB429D11FDCA9800EAB2C8 /* UIKit.framework in Frameworks */,
+				15EB429F11FDCA9800EAB2C8 /* Foundation.framework in Frameworks */,
+				15EB42A111FDCA9800EAB2C8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15EB428A11FDCA9800EAB2C8 = {
+			isa = PBXGroup;
+			children = (
+				15EB429111FDCA9800EAB2C8 /* Classes */,
+				15EB429211FDCA9800EAB2C8 /* Other Sources */,
+				15EB429311FDCA9800EAB2C8 /* Resources */,
+				15EB429411FDCA9800EAB2C8 /* Frameworks */,
+				15EB429A11FDCA9800EAB2C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15EB429111FDCA9800EAB2C8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15EB42C211FDCD6B00EAB2C8 /* AvailableVersions.h */,
+				15EB42C311FDCD6B00EAB2C8 /* AvailableVersions.m */,
+				15EB42A911FDCA9800EAB2C8 /* PhobosAppDelegate.h */,
+				15EB42AA11FDCA9800EAB2C8 /* PhobosAppDelegate.m */,
+				15EB42AF11FDCA9800EAB2C8 /* MainViewController.h */,
+				15EB42B011FDCA9800EAB2C8 /* MainViewController.m */,
+				15EB42B411FDCA9900EAB2C8 /* FlipsideViewController.h */,
+				15EB42B511FDCA9900EAB2C8 /* FlipsideViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15EB429211FDCA9800EAB2C8 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				15EB42A311FDCA9800EAB2C8 /* Phobos_Prefix.pch */,
+				15EB42A711FDCA9800EAB2C8 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		15EB429311FDCA9800EAB2C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15EB42A211FDCA9800EAB2C8 /* Phobos-Info.plist */,
+				15EB42A411FDCA9800EAB2C8 /* InfoPlist.strings */,
+				15EB42AC11FDCA9800EAB2C8 /* MainWindow.xib */,
+				15EB42B211FDCA9900EAB2C8 /* MainView.xib */,
+				15EB42B711FDCA9900EAB2C8 /* FlipsideView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		15EB429411FDCA9800EAB2C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15EB429C11FDCA9800EAB2C8 /* UIKit.framework */,
+				15EB429E11FDCA9800EAB2C8 /* Foundation.framework */,
+				15EB42A011FDCA9800EAB2C8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15EB429A11FDCA9800EAB2C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15EB429911FDCA9800EAB2C8 /* Phobos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15EB429811FDCA9800EAB2C8 /* Phobos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EB42BB11FDCA9900EAB2C8 /* Build configuration list for PBXNativeTarget "Phobos" */;
+			buildPhases = (
+				15EB429511FDCA9800EAB2C8 /* Sources */,
+				15EB429611FDCA9800EAB2C8 /* Frameworks */,
+				15EB429711FDCA9800EAB2C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phobos;
+			productName = Phobos;
+			productReference = 15EB429911FDCA9800EAB2C8 /* Phobos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15EB428C11FDCA9800EAB2C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Democratic National Committee";
+			};
+			buildConfigurationList = 15EB428F11FDCA9800EAB2C8 /* Build configuration list for PBXProject "Phobos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15EB428A11FDCA9800EAB2C8;
+			productRefGroup = 15EB429A11FDCA9800EAB2C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15EB429811FDCA9800EAB2C8 /* Phobos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15EB429711FDCA9800EAB2C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EB42A611FDCA9800EAB2C8 /* InfoPlist.strings in Resources */,
+				15EB42AE11FDCA9800EAB2C8 /* MainWindow.xib in Resources */,
+				15EB42B311FDCA9900EAB2C8 /* MainView.xib in Resources */,
+				15EB42B811FDCA9900EAB2C8 /* FlipsideView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15EB429511FDCA9800EAB2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EB42A811FDCA9800EAB2C8 /* main.m in Sources */,
+				15EB42AB11FDCA9800EAB2C8 /* PhobosAppDelegate.m in Sources */,
+				15EB42B111FDCA9800EAB2C8 /* MainViewController.m in Sources */,
+				15EB42B611FDCA9900EAB2C8 /* FlipsideViewController.m in Sources */,
+				15EB42C411FDCD6B00EAB2C8 /* AvailableVersions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15EB42A411FDCA9800EAB2C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15EB42A511FDCA9800EAB2C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15EB42AC11FDCA9800EAB2C8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15EB42AD11FDCA9800EAB2C8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15EB42B911FDCA9900EAB2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		15EB42BA11FDCA9900EAB2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		15EB42BC11FDCA9900EAB2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Phobos_Prefix.pch;
+				INFOPLIST_FILE = "Phobos-Info.plist";
+				PRODUCT_NAME = Phobos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15EB42BD11FDCA9900EAB2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Phobos_Prefix.pch;
+				INFOPLIST_FILE = "Phobos-Info.plist";
+				PRODUCT_NAME = Phobos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15EB428F11FDCA9800EAB2C8 /* Build configuration list for PBXProject "Phobos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EB42B911FDCA9900EAB2C8 /* Debug */,
+				15EB42BA11FDCA9900EAB2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EB42BB11FDCA9900EAB2C8 /* Build configuration list for PBXNativeTarget "Phobos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EB42BC11FDCA9900EAB2C8 /* Debug */,
+				15EB42BD11FDCA9900EAB2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15EB428C11FDCA9800EAB2C8 /* Project object */;
+}
